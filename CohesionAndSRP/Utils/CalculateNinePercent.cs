@@ -6,11 +6,11 @@ using System.Text;
 
 namespace CohesionAndSRP
 {
-    public class CalculateEightPercent : IInssDiscountCalculation
+    public class CalculateNinePercent : IInssDiscountCalculation
     {
         public double Calculate(Employee employee)
         {
-            return employee.Salary - (employee.Salary * 0.08);
-        }        
+            return employee.BaseSalary - (employee.BaseSalary * 0.09);
+        }
     }
 }
